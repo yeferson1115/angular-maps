@@ -1,0 +1,6 @@
+node_modules
+typings
+*.log
+*.tgz
+.idea
+.tmp

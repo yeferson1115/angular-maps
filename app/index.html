@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prueba concepto</title>
+  <style>
+    ngui-map {
+      width: 60%;
+    }
+    .ls {
+      width: 30%;
+      float: right;
+    }
+    .ls li {
+      color: blue;
+      cursor: pointer;
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+  <ngui-map-app>Loading...</ngui-map-app>
+  <script>
+    document.write('<base href="' + document.location + '" />');
+
+    var script = document.createElement("script");
+    script.src = location.pathname.replace('index.html', '') + 'build/app.js';
+    (document.body).appendChild(script);
+  </script>
+</body>
+</html>
