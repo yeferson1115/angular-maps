@@ -1,7 +1,6 @@
 # map
 * **[![Imgur](http://i.imgur.com/O2EOCxf.png)](https://rawgit.com/ng2-ui/map/master/app/index.html)**		
-* [Plunker Example](https://plnkr.co/edit/6e1qWK?p=preview)
-* [Place Auto Complete Plunker Example](https://plnkr.co/edit/AT3fxW?p=preview)
+
 
 ### Usage
 
