@@ -1,6 +1,3 @@
-# map
-* **[![Imgur](http://i.imgur.com/O2EOCxf.png)](https://rawgit.com/ng2-ui/map/master/app/index.html)**		
-
 
 ### Usage
 
@@ -32,15 +29,3 @@
         })
         export class AppModule { }
 
-
-### List of available npm tasks
-
-  * `npm run` : List all available tasks
-  * `npm start`: Run `app` directory for development using `webpack-dev-server` with port 9001
-  * `npm run clean`: Remove dist folder
-  * `npm run clean:dist`: Clean up unnecessary dist folder within dist and app directory
-  * `npm run lint`: Lint TypeScript code
-  * `npm run build:ngc`: build ES module
-  * `npm run build:umd`: Build UMD module `map.umd.js`
-  * `npm run build:app`: Build `app/build/app.js` for runnable examples
-  * `npm run build`: Build all(build:ngc, build:umc, build:app, and clean:dist)

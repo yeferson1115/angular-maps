@@ -23,13 +23,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ng2-ui/map.git"
+    "url": "git+https://github.com/yeferson1115"
   },
-  "author": "Allen Kim<allenhwkim@gmail.com>",
+  "author": "Yeferson Sossa<yeferson1115@gmail.com>",
   "bugs": {
-    "url": "https://github.com/ng2-ui/map/issues"
+    "url": "https://github.com/yeferson1115"
   },
-  "homepage": "https://github.com/ng2-ui/map#readme",
+  
   "keywords": [
     "angular2",
     "google",

@@ -1,11 +1,7 @@
 #!/usr/bin/env node
 
 'use strict';
-/**
- * this is to declare all INPUTS as a public variable for components and directives
- * Without declaring all INPUTS variable, there will be an error in AoT compilation
- * https://github.com/ng2-ui/map/pull/64
- */
+
 var path = require("path");
 var fs = require('fs-extra');
 
@@ -22,7 +18,7 @@ fs.copySync('src', tmpDir);
     let jsPath = path.join(dirPath, fileName);
 
     js = fs.readFileSync(jsPath, 'utf8');
-    // https://github.com/yahoo/strip-loader/blob/master/lib/index.js#L17
+  
     let regexPattern = new RegExp('(?:^|\\n)[ \\t]*(console.log)\\(((\\"[^\\"]*\\")|(\\\'[^\\\']*\\\')|[^\\);]|\\([^\\);]*\\))*\\)[ \\t]*(?:$|[;\\n])', 'g');
     fs.writeFileSync(jsPath, js.replace(regexPattern, '\n'));
 
