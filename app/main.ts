@@ -5,7 +5,6 @@ import 'zone.js/dist/zone';
 
 // The browser platform with a compiler
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -16,8 +15,10 @@ import {NguiUtilsModule} from '@ngui/utils';
 //noinspection TypeScriptCheckImport
 import { NguiMapModule } from '@ngui/map';
 
+//Componentes
 import { AppComponent } from './app.component';
-
+import { ExperimentComponent } from './Components/experiment.component';
+//Config
 import { APP_ROUTER_PROVIDERS, APP_ROUTER_COMPONENTS } from './Config/app.route';
 //Servicios
 import {PrismicService} from './Service/Prismic.Service';
@@ -39,7 +40,7 @@ const ACCESS_TOKEN = null;
       '&libraries=visualization,places,drawing',
     }),
     NguiUtilsModule ],
-  declarations: [AppComponent, APP_ROUTER_COMPONENTS],
+  declarations: [AppComponent,ExperimentComponent, APP_ROUTER_COMPONENTS],
   providers: [
     PrismicService,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
