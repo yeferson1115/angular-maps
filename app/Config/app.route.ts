@@ -1,9 +1,9 @@
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
-import { SimpleMarkerComponent } from './map-components/simple-marker.component';
+import { SimpleMarkerComponent } from '../map-components/simple-marker.component';
 
-import { ExperimentComponent } from './map-components/experiment.component';
+import { ExperimentComponent } from '../map-components/experiment.component';
 
 export const routes: Routes = [
   

@@ -18,7 +18,14 @@ import { NguiMapModule } from '@ngui/map';
 
 import { AppComponent } from './app.component';
 
-import { APP_ROUTER_PROVIDERS, APP_ROUTER_COMPONENTS } from './app.route';
+import { APP_ROUTER_PROVIDERS, APP_ROUTER_COMPONENTS } from './Config/app.route';
+//Servicios
+import {PrismicService} from './Service/Prismic.Service';
+// Use the endpoint of your repository
+const ENDPOINT = 'https://location.cdn.prismic.io/api';
+// Specify an access token if your API is set to private
+const ACCESS_TOKEN = null;
+// Customize this to match your routing pattern
 
 @NgModule({
   imports: [
@@ -34,7 +41,10 @@ import { APP_ROUTER_PROVIDERS, APP_ROUTER_COMPONENTS } from './app.route';
     NguiUtilsModule ],
   declarations: [AppComponent, APP_ROUTER_COMPONENTS],
   providers: [
+    PrismicService,
     { provide: LocationStrategy, useClass: HashLocationStrategy },
+    { provide: 'PrismicEndpoint', useValue: ENDPOINT },
+    { provide: 'PrismicAccessToken', useValue: ACCESS_TOKEN }
   ],
   bootstrap: [ AppComponent ],
 })

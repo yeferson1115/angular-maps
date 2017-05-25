@@ -28,4 +28,8 @@
           bootstrap: [ AppComponent ]
         })
         export class AppModule { }
-
+		
+		
+### Service Prismic.io
+1. Create Repository of prismic.io
+2. Create content
