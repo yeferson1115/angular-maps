@@ -22,6 +22,10 @@ import { ExperimentComponent } from './Components/experiment.component';
 import { APP_ROUTER_PROVIDERS, APP_ROUTER_COMPONENTS } from './Config/app.route';
 //Servicios
 import {PrismicService} from './Service/Prismic.Service';
+import {ILocationsService,LocationsService} from './Service/Locations.Service';
+
+//Respositorios
+import {ILocationsRepository,LocationsRepository} from './Repositories/Locations.Repository';
 // Use the endpoint of your repository
 const ENDPOINT = 'https://location.cdn.prismic.io/api';
 // Specify an access token if your API is set to private
